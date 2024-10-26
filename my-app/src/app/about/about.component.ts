@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  componentName : string = "About";
+  num : number = 120;
+  imgPath : string = './/..//..//..//public/images/ValvI.png';
+  flag : boolean = false;
 
+  sayHello(){
+    alert("Hello from About Component!");
+  }
 }
