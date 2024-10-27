@@ -13,13 +13,7 @@ export class AboutComponent {
   num : number = 120;
   imgPath : string = './/..//..//..//public/images/ValvI.png';
   flag : boolean = false;
-
-  readonly atSymbol : string = '@';
   sayHello(){
     alert("Hello from About Component!"); 
-  }
-  printInConsole(e : KeyboardEvent){
-    const input = (e.target as HTMLInputElement).value;
-    console.log(input);
   }
 }

@@ -1,0 +1,26 @@
+<p>hello from blog !</p>
+<br>
+<hr>
+<div>
+    @for(i of friends ; track $index){
+    <span class="px-5">{{i}}</span>
+    }
+    <br>
+    <hr>
+    <span class="px-5" *ngFor="let friend of friends ">{{friend}}</span>
+    <h1 *ngIf="isActive; else anyName">Hello from blog</h1>
+    <!-- @if(isActive){
+        <h1>Hello from blog</h1>
+    } -->
+</div>
+<div class="pt-5" [ngSwitch]="case">
+    <p class="px-5" *ngSwitchCase="1">Case 1</p>
+    <p class="px-5" *ngSwitchCase="2">Case 2</p>
+    <p class="px-5" *ngSwitchCase="3">Case 3</p>
+    <p class="px-5" *ngSwitchCase="4">Case 4</p>
+    <p class="pt-5" *ngSwitchDefault >Case 5</p>
+
+</div>
+
+
+<ng-template #anyName>Instead Header</ng-template>
