@@ -10,6 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class BlogComponent {
   friends : string[] = ['ahmed','mohammed','Ali','Salma','yara'];
-  isActive : boolean = true;
-  case : number = 0;
+  isActive : boolean = false;
+  case : number = 1;
 }
