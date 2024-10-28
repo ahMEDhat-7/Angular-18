@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
-import { ExecException } from 'node:child_process';
+import { RouterOutlet } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterOutlet,
+    JobsComponent,
+    ContactComponent
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
