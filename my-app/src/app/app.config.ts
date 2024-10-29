@@ -4,6 +4,7 @@ import { InMemoryScrollingOptions } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
 
 const scrollConfig : InMemoryScrollingOptions = {
   scrollPositionRestoration : 'top',
@@ -14,5 +15,5 @@ const scrollConfig : InMemoryScrollingOptions = {
 const inMemoryScrollingFeature : InMemoryScrollingFeature = withInMemoryScrolling(scrollConfig);
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes,inMemoryScrollingFeature), provideClientHydration()]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes,inMemoryScrollingFeature), provideClientHydration(),provideHttpClient()]
 };

@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProductsService } from './products.service';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +18,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AboutComponent,
     BlogComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
+  providers: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 
 }

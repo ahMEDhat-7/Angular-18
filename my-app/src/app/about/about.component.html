@@ -1,15 +1,18 @@
 
-<div class="bg-info  ">
-    <div>
-        <p>hello from {{componentName}}</p>
-        <p>the Number is {{num}}</p>
+<div class="container">
+    <div class="row">
+        @for (post of posts; track $index) 
+        {
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{post.title}}</h5>
+                            <p class="card-text">{{post.body}}</p>
+                        </div>
+                </div>
+            </div>
+        }
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore at ullam quisquam rem in illum officiis iusto, esse dignissimos, earum nulla! Possimus consequuntur adipisci illo! In labore a ipsam laborum repellendus. Vero distinctio dolorum non laborum, aperiam molestias! Fugit, laboriosam repellendus delectus ex ipsa iste, ratione recusandae officiis, dolores incidunt quam in. Repellat aspernatur facilis porro illum incidunt mollitia nam ad libero voluptatem quisquam consequatur, ex, odit dolor saepe praesentium nobis tempore modi! Quo sed veritatis quasi culpa provident rem repudiandae nisi quaerat sit maxime dolorem, minus quisquam ratione a reiciendis sapiente quos voluptates vel laborum! Pariatur, magnam necessitatibus?</p>
-    <img [src]="imgPath"/>
-    <div [class]="(flag == true) ? 'bg-info' : ''">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum enim odit maiores, similique facere consequatur, voluptatibus asperiores numquam quam sint ducimus repellat aliquid reprehenderit quidem. Esse sint quas a magni.
-    </div>
-
 </div>
 
 <router-outlet></router-outlet>
