@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.height-1000{
+    height: 1000;
+}
+img{
+    height: 200px;
+    width: 250px;
+    border-radius: 50px;
+}
+.padd-top{
+    padding-top: 100px;
+}

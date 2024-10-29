@@ -3,15 +3,28 @@ import { RouterOutlet } from '@angular/router';
 import {FooterComponent} from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ProductsService } from './products.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavbarComponent,FooterComponent , AboutComponent,BlogComponent],
+  imports: [
+    RouterOutlet,
+    NavbarComponent,
+    FooterComponent,
+    AboutComponent,
+    BlogComponent,
+    HomeComponent,
+    NotFoundComponent,
+  ],
+  providers: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
 
 }
